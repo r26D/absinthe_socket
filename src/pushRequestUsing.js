@@ -26,8 +26,13 @@ const setNotifierRequestStatusSending = (absintheSocket, notifier) =>
     ...notifier,
     requestStatus: requestStatuses.sending
   });
+//https://github.com/theblitzapp/absinthe-socket/commit/8f428455b560681ef586a8f1ce2081a21521ef3e#diff-18d5faac84cf29caa149713b8b9fc3d9
+const createRequestError = message => {
+    const error = new Error(`request: ${message}`);
+    error.object = message;
 
-const createRequestError = message => new Error(`request: ${message}`);
+    return error;
+};
 
 const onTimeout = (absintheSocket, notifier) =>
   notifierNotifyActive(
