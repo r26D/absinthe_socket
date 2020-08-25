@@ -1,10 +1,5 @@
 # @absinthe/socket
 
-This was forked from https://github.com/absinthe-graphql/absinthe-socket
-Beacuse of the use of Lerna we needed to make a new repo - so we had to break the chain.
-The goal is to update this to support Apollo v3
-
-
 > Absinthe Socket
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
