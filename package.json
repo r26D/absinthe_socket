@@ -6,8 +6,7 @@
   "main": "compat/cjs/index.js",
   "react-native": "src/index",
   "scripts": {
-    "version": "nps version",
-    "prepack": "nps prepack"
+    "version": "nps version"
   },
   "repository": {
     "type": "git",
